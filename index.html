@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Block4</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__pick-row-container">
+        <div class="header__pick-row pick-row">
+        <!--------------------------немного трэша)------------------------------------->  
+          <input id="menu_toggle" type="checkbox">
+          <label for="menu_toggle">
+            <div class="header__burger burger">
+              <img class="header__burger--img" src="img/pick-row/burger.svg" alt="menu" />
+            </div>
+          </label>
+
+          <ul class="menu__box">
+              <li><a class="menu__item" href="#">
+                  <div class="burger__item"><img src="img/pick-row/burger.svg" alt="menu" /></div>
+                </a>
+              </li>
+              <li><div><a class="menu__item" href="#">Главная</a></div></li>
+              <li><a class="menu__item" href="#">Проекты</a></li>
+              <li><a class="menu__item" href="#">Команда</a></li>
+              <li><a class="menu__item" href="#">Блог</a></li>
+              <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+          <!--------------------------------------------------------------------------->
+
+          <div class="header__divider--left divider">
+            <img src="img/pick-row/divider.svg" alt="" />
+          </div>
+          <div class="pick-row--logo">
+            <img src="img/pick-row/logo.png" alt="logo" />
+          </div>
+          <button type="button" class="pick-row--call">
+            <img src="img/pick-row/call.svg" alt="phone" />
+          </button>
+          <button type="button" class="header__chat chat">
+            <img src="img/pick-row/chat.svg" alt="chat" />
+          </button>
+          <button type="button" class="header__profile profile">
+            <img src="img/pick-row/profile.svg" alt="profile" />
+          </button>
+          <div class="header__divider--right divider">
+            <img src="img/pick-row/divider.svg" alt="" />
+          </div>
+          <button type="button" class="header__repair repair">
+            <img src="img/pick-row/repair.svg" alt="repair" />
+          </button>
+          <button type="button" class="header__status status">
+            <img src="img/pick-row/status.svg" alt="status" />
+          </button>
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------->
+      <div class="header__title-container">
+        <div class="header__title title">
+          <div class="title__highlight">
+            <img src="img/title/highlight.svg" alt="" />
+          </div>
+          <div class="title__service-text">
+            Услуги и сервисы
+          </div>
+          <div class="title__right-container">
+            <div class="title__order-text">Оставить заявку</div>
+            <button type="button" class="title__repair repair">
+              <img src="img/pick-row/repair.svg" alt="repair" />
+            </button>
+            <div class="title__status-text">Статус ремонта</div>
+            <button type="button" class="title__status status">
+              <img src="img/pick-row/status.svg" alt="status" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------->
+      <div class="header__slide-container">
+        <ul class="item-list">
+          <li>
+            <div class="item-list__item item-list__item--active">
+              <a href="#">Ремонтируемые бренды</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-list__item">
+              <a href="#">Ремонтируемые устройства</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-list__item"><a href="#">Цены на услуги</a></div>
+          </li>
+          <li>
+            <div class="item-list__item">
+              <a href="#">Адреса сервисных центров</a>
+            </div>
+          </li>
+          <li>
+            <div class="item-list__item"><a href="#">Специальные цены</a></div>
+          </li>
+          <li>
+            <div class="item-list__item"><a href="#">Отзывы</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!----------------------------------------------------------------------------------------->
+    <main class="main">
+      <div class="main__text-container">
+        <div class="main__text text">          
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          <br><br>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+        </div>
+        <div class="main__read-more">
+          <div class="main__read-more--img">
+            <img src="img/text/readmore.svg" />
+          </div>
+          <div class="main__read-more--text">
+            Читать далее
+          </div>
+        </div>
+      </div>
+      <div class="main__main-img">
+        <img
+          class="main__main-img--size"
+          srcset="
+            img/main-img/1.png 400w,
+            img/main-img/2.png 450w,
+            img/main-img/3.png 665w
+          "
+          sizes="
+              (max-width: 767px) 400px,
+              (max-width: 1120px) 450px,
+              (min-width: 1221px) 665px"
+          src="imp/main-img/1.png"
+          alt="logo"
+        />
+      </div>
+    </main>
+    <!---------------------------------------------------------------------------------------->
+    <footer class="footer">
+      <div class="footer-container"></div>
+    </footer>
+  </body>
+</html>
