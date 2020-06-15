@@ -19,9 +19,7 @@
   font-style: normal;
   font-weight: bold;
 }
-/*-------------------------trash-zone-)menu-----------------------------------*/
 
-/*-----------------------------------------------------------------*/
 body {
   margin: 0;
   padding: 0;
@@ -179,12 +177,14 @@ button {
 
 .title__order-text {
   margin-left: auto;
+  font-family: "TT Lakes medium";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1b1c21;
 }
 .title__status-text {
+  font-family: "TT Lakes medium";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -209,28 +209,30 @@ button {
   display: flex;
   width: 100%;
   background-color: #f8f8f8;
+  
 }
 
 .item-list {
-  display: flex;
+  display: flex;  
+  overflow-x: scroll;
+  list-style-type: none;
   flex-wrap: nowrap;
   width: 100%;
-  list-style-type: none;
   justify-content: flex-start;
-  align-items: center;
-  overflow-x: auto;
+  align-items: center;  
+}
+.item-list::-webkit-scrollbar {
+  height: 0;
 }
 
-.item-list__item {
-  min-width: 200px;
-  margin: 0 20px;
+.item-list__item {  
+  display: inline-block;
+  margin: 10px 4px;
+  margin-right: 40px;
 }
-.item-list__item--active {
-  border: 1px solid #b8ffec;
-  border-radius: 6px;
-  padding: 0.6em 1.1em;
-  background-color: #ffffff;
-  margin-left: 16px;
+.item-list__item:focus {
+  display: inline-block;
+  margin: 8px -20px;  
 }
 .item-list__item a {
   text-decoration: none;
@@ -241,6 +243,15 @@ button {
   letter-spacing: -0.2px;
   color: #7e7e82;
 }
+.item-list__item a:focus {
+  border: 1px solid #b8ffec;
+  border-radius: 6px;
+  padding: 0.6em 1.5em;
+  background-color: #ffffff;
+  margin-left: -25px;
+  margin-right: -25px;
+  letter-spacing: -0.2px;
+}
 .item-list__item a:link,
 a:visited,
 a:hover,
@@ -249,6 +260,7 @@ a:active {
   color: #7e7e82;
 }
 /*------------------------------------------------------------------------------*/
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -256,24 +268,22 @@ a:active {
   margin: 0 auto;
   padding: 0;
   background-color: #f8f8f8;
-  /*border: 1px solid red;*/
 }
 .main__main-img {
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  /*border: 1px solid green;*/
 }
 
 .main__text-container {
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
+  flex-grow: 1;
   flex-wrap: wrap;
   align-content: flex-start;
   padding: 0 16px;
-  /*border: 1px dashed blue;*/
 }
 .text {
   font-family: "TT Lakes";
@@ -284,10 +294,8 @@ a:active {
 }
 .main__text {
   width: 100%;
-  /*margin-bottom: 16px;*/
   max-height: 90px;
-  overflow-y: hidden;
-  /*border: 1px solid black;*/  
+  overflow-y: hidden; 
 }
 .main__read-more {
   display: flex;
@@ -295,32 +303,38 @@ a:active {
   align-items: flex-start;
   margin-left: 8px;
   margin-top: 16px;
-  margin-bottom: 16px;
-  /*border: 1px solid red;*/
-}
+  margin-bottom: 16px;}
 .main__read-more--text {
-  font-family: TT Lakes;
+  font-family: "TT Lakes medium";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1b1c21;
   padding-left: 16px;
+  background-color: #f8f8f8;
+}
+.main__read-more--text:hover {
+  cursor: pointer; 
 }
 .main__read-more--img {
   align-self: center;
+  background-color: #f8f8f8;
+}
+.main__read-more--img:hover {
+  cursor: pointer; 
 }
 /*-------------------------------------------------------------------------------*/
 .footer-container {
   background-color: #f8f8f8;
 }
 /*-------------------------------------------------------------------------------*/
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .header__divider--right {
     margin-left: auto;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
+@media (min-width: 769px) and (max-width: 1119px) {
   .pick-row--call {
     display: flex;
   }
@@ -339,8 +353,13 @@ a:active {
   .header__title {
     margin-bottom: 32px;
   }
+  .item-list__item { 
+    margin: 10px 27px;
+  }
   .main {
     flex-wrap: nowrap;
+    width: 95%;
+
   }
   .main__main-img {
     flex-basis: 50%;
@@ -365,7 +384,7 @@ a:active {
     line-height: 20px;
   }
 }
-@media (min-width: 1121px) {
+@media (min-width: 1120px) {
   .header__pick-row-container {
     display: none;
   }
@@ -379,6 +398,9 @@ a:active {
   .item-list {
     flex-wrap: wrap;
     overflow-x: none;
+  }
+  .item-list__item { 
+    margin: 10px 22px;
   }
   .main {
     flex-wrap: nowrap;
