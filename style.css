@@ -276,14 +276,12 @@ a:active {
   align-content: flex-start;
   padding: 0 16px 0 16px;
 }
-.text {
+.main__description {
   font-family: "TT Lakes";
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #1b1c21;
-}
-.main__text {
   width: 100%;
   max-height: 90px;
   overflow-y: hidden; 
@@ -359,7 +357,7 @@ a:active {
     margin-top: 10px;
     margin-left: 9px;
   }
-  .text {
+  .main__description {
     max-height: 145px;
     line-height: 20px;
   }
@@ -409,7 +407,7 @@ a:active {
   .main__main-img--size {
     border-radius: 8px;
   }
-  .text {
+  .main__description {
     line-height: 20px;
     max-height: 160px;
   }
