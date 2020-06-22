@@ -148,11 +148,6 @@ button {
   margin-left: 16px;
 }
 /*----------------------------------------------------------------------------*/
-
-.header__title-container {
-  background-color: #f8f8f8;
-  width: 100%;
-}
 .title {
   display: flex;
   align-items: center;
@@ -160,6 +155,8 @@ button {
   background-color: #f8f8f8;
   margin: 24px 0;
   height: 40px;
+  background-color: #f8f8f8;
+  width: 100%;
 }
 .title__right-container {
   display: none;
@@ -203,7 +200,7 @@ button {
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.24), 0 4px 5px 0 rgba(0,0,0,0.19);
 }
 /*------------------------------------------------------------------------------*/
-.main__menu-list {
+.main__list-menu {
   -webkit-padding-start: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -216,10 +213,10 @@ button {
   background-color: #f8f8f8;  
   padding: 7px 16px;
 }
-.main__menu-list::-webkit-scrollbar {
+.main__list-menu::-webkit-scrollbar {
   height: 0;
 }
-.main__menu-list-item {
+.main__list-menu-item {
   display: inline-block;
   text-decoration: none;
   white-space: nowrap;
@@ -230,7 +227,7 @@ button {
   color: #7e7e82;
   padding: 7px 17px;
 }
-.main__menu-list-item:focus {
+.main__list-menu-item:focus {
   border: 2px solid #b8ffec;
   border-radius: 6px;
   padding: 5px 15px;
@@ -239,7 +236,7 @@ button {
   margin-right: 0;
   letter-spacing: -0.2px;
 }
-.main__menu-list-item a:link,
+.main__list-menu-item a:link,
 a:visited,
 a:hover,
 a:focus,
@@ -263,14 +260,17 @@ a:active {
   justify-content: center;
   align-items: center;
 }
-
+.main__main-img {
+  max-width:100%;
+  height:auto;
+}
 .main__text-container {
   display: flex;
   width: 100%;
   flex-grow: 1;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 0;
+  padding: 0 16px 0 16px;
 }
 .text {
   font-family: "TT Lakes";
@@ -306,10 +306,6 @@ a:active {
   cursor: pointer; 
 }
 /*-------------------------------------------------------------------------------*/
-.footer-container {
-  background-color: #f8f8f8;
-}
-/*-------------------------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 767px) {
   .header__divider--right {
     margin-left: auto;
@@ -335,7 +331,7 @@ a:active {
   .header__title {
     margin-bottom: 32px;
   }
-  .main__menu-list { 
+  .main__list-menu { 
     padding-left: 24px;
   }
   .main {
@@ -354,8 +350,6 @@ a:active {
     flex-basis: 50%;
     flex-wrap: wrap;
     margin-left: 0;
-    /*padding-right: 48px;
-    padding-left: 24px;*/
   }
   .main__read-more {
     margin-top: 10px;
@@ -364,6 +358,9 @@ a:active {
   .text {
     max-height: 160px;
     line-height: 20px;
+  }
+  .title {
+    margin: 24px 0 30px 0;
   }
 }
 @media (min-width: 1120px) {
@@ -377,7 +374,7 @@ a:active {
   .title__right-container {
     display: flex;
   }
-  .main__menu-list {
+  .main__list-menu {
     overflow-x: none;
     flex-wrap: wrap;
     padding-left: 32px;
@@ -411,5 +408,8 @@ a:active {
   .text {
     line-height: 20px;
     max-height: 160px;
+  }
+  .title {
+    margin: 42px 0 2px 0;
   }
 }
