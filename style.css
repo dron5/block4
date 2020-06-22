@@ -153,15 +153,13 @@ button {
   background-color: #f8f8f8;
   width: 100%;
 }
-.header__title {
-  margin: 24px 0;
-  height: 40px;
-}
 .title {
   display: flex;
   align-items: center;
   width: 100%;
   background-color: #f8f8f8;
+  margin: 24px 0;
+  height: 40px;
 }
 .title__right-container {
   display: none;
@@ -205,36 +203,24 @@ button {
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.24), 0 4px 5px 0 rgba(0,0,0,0.19);
 }
 /*------------------------------------------------------------------------------*/
-.header__slide-container {
-  display: flex;
-  width: 100%;
-  background-color: #f8f8f8;
-  
-}
-
-.item-list {
+.main__menu-list {
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
   display: flex;  
   overflow-x: scroll;
   list-style-type: none;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: center;  
+  width: 100%;  
+  background-color: #f8f8f8;  
+  padding: 7px 16px;
 }
-.item-list::-webkit-scrollbar {
+.main__menu-list::-webkit-scrollbar {
   height: 0;
 }
-
-.item-list__item {  
+.main__menu-list-item {
   display: inline-block;
-  margin: 10px 4px;
-  margin-right: 40px;
-}
-.item-list__item:focus {
-  display: inline-block;
-  margin: 8px -20px;  
-}
-.item-list__item a {
   text-decoration: none;
   white-space: nowrap;
   font-family: TT Lakes;
@@ -242,17 +228,18 @@ button {
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #7e7e82;
+  padding: 7px 17px;
 }
-.item-list__item a:focus {
-  border: 1px solid #b8ffec;
+.main__menu-list-item:focus {
+  border: 2px solid #b8ffec;
   border-radius: 6px;
-  padding: 0.6em 1.5em;
+  padding: 5px 15px;
   background-color: #ffffff;
-  margin-left: -25px;
-  margin-right: -25px;
+  
+  margin-right: 0;
   letter-spacing: -0.2px;
 }
-.item-list__item a:link,
+.main__menu-list-item a:link,
 a:visited,
 a:hover,
 a:focus,
@@ -283,7 +270,7 @@ a:active {
   flex-grow: 1;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 0 16px;
+  padding: 0;
 }
 .text {
   font-family: "TT Lakes";
@@ -299,28 +286,23 @@ a:active {
 }
 .main__read-more {
   display: flex;
-  width: 100%;
+  width: auto;
   align-items: flex-start;
-  margin-left: 8px;
   margin-top: 16px;
-  margin-bottom: 16px;}
-.main__read-more--text {
+  margin-bottom: 16px;
   font-family: "TT Lakes medium";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1b1c21;
-  padding-left: 16px;
+  padding-left: 0;
   background-color: #f8f8f8;
 }
-.main__read-more--text:hover {
-  cursor: pointer; 
+.main__read-more::before {
+  content: url(img/text/readmore.svg);
+  padding-right: 10px;
 }
-.main__read-more--img {
-  align-self: center;
-  background-color: #f8f8f8;
-}
-.main__read-more--img:hover {
+.main__read-more:hover {
   cursor: pointer; 
 }
 /*-------------------------------------------------------------------------------*/
@@ -328,13 +310,13 @@ a:active {
   background-color: #f8f8f8;
 }
 /*-------------------------------------------------------------------------------*/
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .header__divider--right {
     margin-left: auto;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1119px) {
   .pick-row--call {
     display: flex;
   }
@@ -353,8 +335,8 @@ a:active {
   .header__title {
     margin-bottom: 32px;
   }
-  .item-list__item { 
-    margin: 10px 27px;
+  .main__menu-list { 
+    padding-left: 24px;
   }
   .main {
     flex-wrap: nowrap;
@@ -371,9 +353,9 @@ a:active {
   .main__text-container {
     flex-basis: 50%;
     flex-wrap: wrap;
-    margin: 0;
-    padding-right: 48px;
-    padding-left: 24px;
+    margin-left: 0;
+    /*padding-right: 48px;
+    padding-left: 24px;*/
   }
   .main__read-more {
     margin-top: 10px;
@@ -388,19 +370,17 @@ a:active {
   .header__pick-row-container {
     display: none;
   }
-  .header__title {
+  .title {
     margin-top: 42px;
     margin-bottom: 8px;
   }
   .title__right-container {
     display: flex;
   }
-  .item-list {
-    flex-wrap: wrap;
+  .main__menu-list {
     overflow-x: none;
-  }
-  .item-list__item { 
-    margin: 10px 22px;
+    flex-wrap: wrap;
+    padding-left: 32px;
   }
   .main {
     flex-wrap: nowrap;
