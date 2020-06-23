@@ -8,16 +8,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__pick-row-container">
         <div class="header__pick-row pick-row">
-          <div class="header__burger burger">
-            <img class="header__burger--img" src="img/pick-row/burger.svg" alt="" />
-          </div>                   
-          <div class="header__divider--left divider">
-            <img src="img/pick-row/divider.svg" alt="" />
-          </div>
+          <div class="burger">
+            <img src="img/pick-row/burger.svg" alt="" />
+          </div> 
           <div class="pick-row--logo">
-            <img src="img/pick-row/logo.png" alt="logo" />
+            <img src="img/pick-row/logo.png" alt="" />
           </div>
           <button type="button" class="pick-row--call">
             <img src="img/pick-row/call.svg" alt="phone" />
@@ -26,21 +22,17 @@
             <img src="img/pick-row/chat.svg" alt="chat" />
           </button>
           <button type="button" class="header__profile profile">
-            <img src="img/pick-row/profile.svg" alt="profile" />
+            <img src="img/pick-row/profile.svg" alt="" />
           </button>
-          <div class="header__divider--right divider">
-            <img src="img/pick-row/divider.svg" alt="" />
-          </div>
-          <button type="button" class="header__repair repair">
-            <img src="img/pick-row/repair.svg" alt="repair" />
+          <button type="button" class="repair">
+            <img src="img/pick-row/repair.svg" alt="" />
           </button>
           <button type="button" class="header__status status">
-            <img src="img/pick-row/status.svg" alt="status" />
+            <img src="img/pick-row/status.svg" alt="" />
           </button>
         </div>
-      </div>
     </header>
-      <!----------------------------------------------------------------------------------------->
+      
       <main class="main">
       <div class="title">
           <div class="title__highlight">
@@ -50,12 +42,12 @@
             Услуги и сервисы
           </div>
           <div class="title__right-container">
-            <div class="title__order-text">Оставить заявку</div>
-            <button type="button" class="title__repair repair">
+            <label for="repair" class="title__order-text">Оставить заявку</label>
+            <button type="button" class="title__repair repair" id="repair">
               <img src="img/pick-row/repair.svg" alt="repair" />
             </button>
-            <div class="title__status-text">Статус ремонта</div>
-            <button type="button" class="title__status status">
+            <label for="status" class="title__status-text">Статус ремонта</label>
+            <button type="button" class="title__status status" id="status">
               <img src="img/pick-row/status.svg" alt="status" />
             </button>
           </div>

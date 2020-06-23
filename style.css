@@ -31,13 +31,11 @@ body {
   margin: 0;
   padding: 0;
 }
-.header__pick-row-container {
+.header__pick-row {
   display: flex;
   width: 99.9%;
-  border-bottom: 1px solid #d9fff5;
-}
-.header__pick-row {
   padding: 24px 16px;
+  border-bottom: 1px solid #d9fff5;
 }
 .pick-row {
   display: flex;
@@ -45,28 +43,13 @@ body {
   width: 100%;
   background-color: #ffffff;
 }
-.divider {
-  height: 32px;
-  width: 2px;
-  align-self: center;
-  border-radius: 1px;
-  background-color: #eaeaea;
-}
-
-.header__divider--right {
-  margin: 0 20px;
-}
-.header__divider--left {
-  display: none;
-  margin: 0 20px;
-}
 button {
   padding: 0;
   border: none;
 }
 .burger {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-width: 40px;
   height: 40px;
   background-color: #ff3e79;
@@ -74,9 +57,17 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-right: 16px;
 }
-.header__burger--img {
-  z-index: 1;
+
+.burger::after {
+  display: none;
+  content: url(img/pick-row/divider.svg);
+  height: 32px;
+  width: 2px;
+  border-radius: 1px;
+  background-color: #eaeaea;
+  transform: translateX(30px);
 }
 .pick-row--logo {
   display: flex;
@@ -85,7 +76,7 @@ button {
   height: 40px;
   align-items: center;
   margin-right: 16px;
-  margin-left: 16px;
+  margin-left: 0;
 }
 .pick-row--call {
   display: none;
@@ -123,6 +114,7 @@ button {
 }
 .header__profile {
   margin-left: 16px;
+  margin-right: 40px;
 }
 .repair {
   display: flex;
@@ -133,6 +125,15 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-left: auto;
+}
+.repair::before {
+  content: url(img/pick-row/divider.svg);
+  height: 32px;
+  width: 2px;
+  border-radius: 1px;
+  background-color: #eaeaea;
+  transform: translateX(-30px);
 }
 .status {
   display: flex;
@@ -317,6 +318,12 @@ a:active {
   .pick-row--call {
     display: flex;
   }
+  .burger {
+    margin-right: 40px;
+  }
+  .burger::after {
+    display: block;
+  }
   .chat {
     display: flex;
   }
@@ -326,8 +333,8 @@ a:active {
   .pick-row--logo {
   margin-left: 0;
   }
-  .header__divider--left {
-    display: block;
+  .repair {
+    margin-left: 0;
   }
   .header__title {
     margin-bottom: 32px;
@@ -366,7 +373,7 @@ a:active {
   }
 }
 @media (min-width: 1120px) {
-  .header__pick-row-container {
+  .header__pick-row {
     display: none;
   }
   .title {
@@ -413,5 +420,8 @@ a:active {
   }
   .title {
     margin: 42px 0 2px 0;
+  }
+  .repair::before {
+    display: none;
   }
 }
