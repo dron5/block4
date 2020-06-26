@@ -8,105 +8,89 @@
   </head>
   <body>
     <header class="header">
-        <div class="header__pick-row pick-row">
-          <div class="burger">
+        <div class="header__pick-row">
+          <div class="header__burger">
             <img src="img/pick-row/burger.svg" alt="" />
           </div> 
-          <div class="pick-row--logo">
+          <div class="header__logo">
             <img src="img/pick-row/logo.png" alt="" />
           </div>
-          <button type="button" class="pick-row--call">
+          <button type="button" class="header__call">
             <img src="img/pick-row/call.svg" alt="phone" />
           </button>
-          <button type="button" class="header__chat chat">
+          <button type="button" class="header__chat">
             <img src="img/pick-row/chat.svg" alt="chat" />
           </button>
-          <button type="button" class="header__profile profile">
+          <button type="button" class="header__profile">
             <img src="img/pick-row/profile.svg" alt="" />
           </button>
-          <button type="button" class="repair">
+          <button type="button" class="header__repair">
             <img src="img/pick-row/repair.svg" alt="" />
           </button>
-          <button type="button" class="header__status status">
+          <button type="button" class="header__status">
             <img src="img/pick-row/status.svg" alt="" />
           </button>
         </div>
     </header>
       
-      <main class="main">
-      <div class="title">
-          <div class="title__highlight">
-            <img src="img/title/highlight.svg" alt="" />
-          </div>
-          <div class="title__service-text">
+    <main class="main">
+      <div class="main__title">
+          <div class="main__service-text">
             Услуги и сервисы
           </div>
-          <div class="title__right-container">
-            <label for="repair" class="title__order-text">Оставить заявку</label>
-            <button type="button" class="title__repair repair" id="repair">
+          <div class="main__right-container">
+            <label for="repair" class="main__order-label">Оставить заявку</label>
+            <button type="button" class="main__order" id="repair">
               <img src="img/pick-row/repair.svg" alt="repair" />
             </button>
-            <label for="status" class="title__status-text">Статус ремонта</label>
-            <button type="button" class="title__status status" id="status">
+            <label for="status" class="main__status-label">Статус ремонта</label>
+            <button type="button" class="main__status" id="status">
               <img src="img/pick-row/status.svg" alt="status" />
             </button>
           </div>
-        </div>
-      
-        <ul class="main__list-menu">
-          <li>
-              <a class="main__list-menu-item" href="#">Ремонтируемые бренды</a>
-          </li>
-          <li>
-              <a class="main__list-menu-item" href="#">Ремонтируемые устройства</a>
-          </li>
-          <li>
-              <a class="main__list-menu-item" href="#">Цены на услуги</a>
-          </li>
-          <li>
-              <a class="main__list-menu-item" href="#">Адреса сервисных центров</a>
-          </li>
-          <li>
-              <a class="main__list-menu-item" href="#">Специальные цены</a>
-          </li>
-          <li>
-              <a class="main__list-menu-item" href="#">Отзывы</a>
-          </li>
-        </ul>
+      </div>
+
+      <ul class="main__list-menu">
+        <li>
+          <a class="main__list-menu-item" href="#">Ремонтируемые бренды</a>
+        </li>
+        <li>
+          <a class="main__list-menu-item" href="#">Ремонтируемые устройства</a>
+        </li>
+        <li>
+          <a class="main__list-menu-item" href="#">Цены на услуги</a>
+        </li>
+        <li>
+          <a class="main__list-menu-item" href="#">Адреса сервисных центров</a>
+        </li>
+        <li>
+          <a class="main__list-menu-item" href="#">Специальные цены</a>
+        </li>
+        <li>
+          <a class="main__list-menu-item" href="#">Отзывы</a>
+        </li>
+      </ul>
    
       <div class="main__container-description">
-      <div class="main__text-container">
-        <div class="main__description">          
+        <div class="main__text-container">
+          <div class="main__description">          
             Мы являемся авторизованным сервисным центром по ремонту техники
             Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
             официальной гарантией производителя.
-          <br><br>
+            <br><br>
             Мы успешно работаем с 1992 года и заслужили репутацию надежного
             партнера, что подтверждает большое количество постоянных клиентов.
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.
-        </div>
+          </div>
           <button type="button" class="main__read-more">
             Читать далее
           </button>
+        </div>
+        <div class="main__img-container">
+          <img src="img/main-img/1.png" class="main__main-img" alt="">
+        </div>
       </div>
-      <div class="main__main-img">
-        <img
-          class="main__main-img--size"
-          srcset="
-            img/main-img/1.png 400w,
-            img/main-img/2.png 450w,
-            img/main-img/3.png 665w
-          "
-          sizes="
-              (max-width: 768px) 400px,
-              (max-width: 1119px) 450px,
-              (max-width: 1920px) 665px"
-          src="imp/main-img/1.png"
-          alt="logo"
-        />
-      </div>
-    </div>
-    </main>
+  </main>
   </body>
 </html>

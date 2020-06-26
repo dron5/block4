@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url("fonts/TTLakes-Regular.ttf"), url("fonts/TTLakes-Regular.woff"),
+      url("fonts/TTLakes-Regular.eot");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "TT Lakes medium";
+    src: url("fonts/TTLakes-Medium.ttf"), url("fonts/TTLakes-Medium.woff"),
+      url("fonts/TTLakes-Medium.eot");
+    font-style: normal;
+    font-weight: medium;
+  }
+  @font-face {
+    font-family: "TT Lakes bold";
+    src: url("fonts/TTLakes-Bold.ttf"), url("fonts/TTLakes-Bold.woff"),
+      url("fonts/TTLakes-Bold.eot");
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    font-size: 0;
+}
+button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+}
+.mob-menu {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 1024px;
+    background-color: #ffffff;
+    box-shadow: -12px 0px 80px -1px #34495e;
+}
+.mob-menu__top {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-top: 23px;
+}
+.mob-menu__top li:first-child {
+    display: flex;
+    justify-content: center;
+    padding-right: 16px;
+}
+.mob-menu__top li:first-child .mob-menu__top-item {
+    display: flex;
+    background-color: #ff3e79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.mob-menu__burger--active {    
+    width: 14px;
+    height: 2px;
+    background-color: transparent;
+    border-radius: 2px;
+    transform: translateX(8px);
+}
+.mob-menu__burger--active::before,
+.mob-menu__burger--active::after {
+    content: '';
+    position: absolute;
+    display: block;    
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+}
+.mob-menu__burger--active::before {    
+    transform: rotate(45deg);
+}
+.mob-menu__burger--active::after {
+    transform: rotate(-45deg);
+}
+.mob-menu__top li:last-child {
+    margin-left: auto;
+    margin-right: 24px;
+}
+.mob-menu__top-item:hover{
+    transition: 0.3s;
+    opacity: 0.7;
+    transform: scale(1.07); 
+}
+
+.mob-menu__list {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 40px;
+}
+.mob-menu__list-item {
+    display: block;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;  
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    text-decoration: none;
+}
+.mob-menu__list-item:focus,
+.mob-menu__list-item:hover {
+    color: #7E7E82;
+    border-color: #ffffff;
+}
+.mob-menu__list-item:focus::before {
+    position: absolute;
+    content: url(img/mobmenu/highlight.svg);
+    transform: translateX(-24px) translateY(-5px);
+}
+.mob-menu__bottom {
+    display: flex;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    margin-top: auto;
+}
+.mob-menu__bottom li:nth-child(n+1) {
+    padding-right: 16px;
+}
+.mob-menu__bottom-item:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+    transform: scale(1.07);  
+}
+.mob-menu__email {
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
+.mob-menu__number {
+    font-family: TT Lakes bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin-bottom: 40px;
+    margin-left: 24px;
+}
+
+.mob-menu__lang {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+
+.mob-menu__lang li:nth-child(n+1) button:not(.mob-menu__lang--active) {
+    display: table;
+    margin-right: 5px;
+    background-color: #ffffff;
+    font-family: TT Lakes medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+.mob-menu__lang .mob-menu__lang--active {
+    display: table;
+    margin-right: 5px;
+    background-color: #ffffff;
+    font-family: TT Lakes medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
