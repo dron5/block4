@@ -1,21 +1,21 @@
 @font-face {
     font-family: "TT Lakes";
-    src: url("fonts/TTLakes-Regular.ttf"), url("fonts/TTLakes-Regular.woff"),
-      url("fonts/TTLakes-Regular.eot");
+    src: url("../fonts/TTLakes-Regular.ttf"), url("../fonts/TTLakes-Regular.woff"),
+      url("../fonts/TTLakes-Regular.eot");
     font-style: normal;
     font-weight: normal;
   }
   @font-face {
     font-family: "TT Lakes medium";
-    src: url("fonts/TTLakes-Medium.ttf"), url("fonts/TTLakes-Medium.woff"),
-      url("fonts/TTLakes-Medium.eot");
+    src: url("../fonts/TTLakes-Medium.ttf"), url("../fonts/TTLakes-Medium.woff"),
+      url("../fonts/TTLakes-Medium.eot");
     font-style: normal;
     font-weight: medium;
   }
   @font-face {
     font-family: "TT Lakes bold";
-    src: url("fonts/TTLakes-Bold.ttf"), url("fonts/TTLakes-Bold.woff"),
-      url("fonts/TTLakes-Bold.eot");
+    src: url("../fonts/TTLakes-Bold.ttf"), url("../fonts/TTLakes-Bold.woff"),
+      url("../fonts/TTLakes-Bold.eot");
     font-style: normal;
     font-weight: bold;
   }
@@ -139,7 +139,7 @@ button {
 }
 .mob-menu__list-item:hover::before {
     position: absolute;
-    content: url(img/mobmenu/highlight.svg);
+    content: url(../img/mobmenu/highlight.svg);
     transform: translateX(-24px) translateY(-5px);
 }
 .mob-menu__bottom {
