@@ -57,6 +57,7 @@ button {
 }
 .mob-menu__top-item:first-of-type {
     display: flex;
+    align-items: center;
     background-color: #ff3e79;
     width: 40px;
     height: 40px;
