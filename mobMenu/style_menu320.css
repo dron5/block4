@@ -97,23 +97,21 @@ button {
     margin-left: auto;
     margin-right: 24px;
     background-color: #ff3e79;
+    background-image: url(../img/pick-row/search_m.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .mob-menu__top-item:first-of-type:hover{
     animation-name:  b_rotate, b_coloring;
-    animation-duration: 0.65s, 0.5s;
-    animation-timing-function: ease-out;
-    transform: scale(1.25);
-    transition: transform 0.8s ease-out;
-    background-color: lightgreen;
+    animation-duration: 0.5s, 0.5s;
+    animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+    animation-fill-mode: forwards;
 }
-
 .mob-menu__top-item:last-of-type:hover{
-    transform: scale(1.25);
-    transition: transform 0.8s ease-out;
     animation-name:  s_rotate, b_coloring;
     animation-duration: 0.5s, 0.5s;
-    animation-timing-function: ease-out; 
-    background-color: lightgreen;
+    animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); 
+    animation-fill-mode: forwards;
 }
 .mob-menu__list {
     display: flex;
@@ -152,12 +150,28 @@ button {
     border-radius: 50%;
     margin-right: 17px;
 }
+.mob-menu__bottom-item:nth-child(1)  {
+    background-image: url("../img/pick-row/call.svg");
+    width: 40px;
+    height: 40px;
+}
+.mob-menu__bottom-item:nth-child(2)  {
+    background-image: url("../img/pick-row/chat.svg");
+    width: 40px;
+    height: 40px;
+}
+.mob-menu__bottom-item:nth-child(3)  {
+    background-image: url("../img/pick-row/profile.svg");
+    width: 40px;
+    height: 40px;
+    animation-duration: 0.6s;
+    transition: transform 0.5s ease;
+}
 .mob-menu__bottom-item:hover {
     opacity: 0.6;
     animation-name: btm_rotate;
     animation-duration: 0.6s;
-    transform: scale(1.25);
-    transition: transform 0.5s ease;
+    animation-fill-mode: forwards;
 }
 .mob-menu__email {
     font-family: TT Lakes;
@@ -208,12 +222,12 @@ button {
 }
 
 @keyframes b_rotate {
-    from {transform: rotate(0deg);}    
-    to {transform: rotate(180deg);}
+    from {transform: rotate(0deg) scale(1);}    
+    to {transform: rotate(180deg) scale(1.25);}
 }
 @keyframes s_rotate {
-    from {transform: rotate(0deg);}    
-    to {transform: rotate(-360deg);}
+    from {transform: rotate(0deg) scale(1);}    
+    to {transform: rotate(-360deg) scale(1.25);}
 }
 @keyframes b_coloring {
     0% {background-color: lightgrey;}    
@@ -221,7 +235,7 @@ button {
 }
 @keyframes btm_rotate {
     0%,
-    5% {transform: rotate(45deg);}
+    5% {transform: rotate(45deg) scale(1);}
     50% {transform: rotate(-90deg);}
-    to {transform: rotate(0deg);}
+    to {transform: rotate(0deg) scale(1.25);}
 }
