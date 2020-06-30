@@ -164,8 +164,6 @@ button {
     background-image: url("../img/pick-row/profile.svg");
     width: 40px;
     height: 40px;
-    animation-duration: 0.6s;
-    transition: transform 0.5s ease;
 }
 .mob-menu__bottom-item:hover {
     opacity: 0.6;
