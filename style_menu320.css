@@ -102,13 +102,13 @@ button {
     animation-name:  b_rotate, b_coloring;
     animation-duration: 0.65s, 0.5s;
     animation-timing-function: ease-out;
-    transform: scale(1.2);
+    transform: scale(1.25);
     transition: transform 0.8s ease-out;
     background-color: lightgreen;
 }
 
 .mob-menu__top-item:last-of-type:hover{
-    transform: scale(1.2);
+    transform: scale(1.25);
     transition: transform 0.8s ease-out;
     animation-name:  s_rotate, b_coloring;
     animation-duration: 0.65s, 0.5s;
@@ -156,7 +156,7 @@ button {
     opacity: 0.6;
     animation-name: btm_rotate;
     animation-duration: 0.6s;
-    transform: scale(1.2);
+    transform: scale(1.25);
     transition: transform 0.5s ease;
 }
 .mob-menu__email {
