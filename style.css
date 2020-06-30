@@ -46,7 +46,7 @@ button {
 .header__burger {
   display: flex;
   flex-direction: row;
-  min-width: 40px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   justify-content: center;
@@ -171,6 +171,9 @@ button {
   transform: translateX(-12px);
 }
 .main__order-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-left: auto;
   font-family: "TT Lakes medium";
   font-size: 16px;
@@ -192,6 +195,9 @@ button {
   margin-right: 32px;
 }
 .main__status-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   font-family: "TT Lakes medium";
   font-size: 16px;
   line-height: 24px;
@@ -269,7 +275,7 @@ a:active {
   padding: 0 16px 0 16px;
 }
 .main__description {
-  display: flex;
+  display: inline-block;
   font-family: "TT Lakes";
   font-size: 14px;
   line-height: 18px;
