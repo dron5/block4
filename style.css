@@ -358,6 +358,7 @@ a:active {
   }
   .main__list-menu { 
     padding-left: 24px;
+    margin-right: 24px;
   }
   .main__container-description {
     flex-wrap: nowrap;
