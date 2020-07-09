@@ -44,7 +44,6 @@ const slider = document.querySelector('.swiper-container');
 let swiper = new Swiper(slider, {
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
     },
     slidesPerView: 'auto',
     spaceBetween: 16,
