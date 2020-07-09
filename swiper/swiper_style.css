@@ -103,6 +103,7 @@ body, html, div, button {
   width: 100%;
   height: auto;
   background-color: #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 .logo-wrapper--closed {
   display: flex;
@@ -129,29 +130,32 @@ body, html, div, button {
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
-  padding-left: 35px;
-  padding-bottom: 34px;
-  padding-top: 24px;
+  margin-left: 35px;
+  margin-bottom: 34px;
+  margin-top: 24px;
   cursor: pointer;
+  background-color: #f2f2f2;
+  padding-right: 5px;
 }
 .logo__show--more {
   cursor: pointer;
 }
 .logo__show--more::before {
   content: url(img/readmore.svg);
-  padding-right: 17px;
+  padding-right: 15px;
+  padding-left: 4px;
   cursor: pointer;
 }
 .logo__show--less {
   cursor: pointer;
-  padding-bottom: 22px;
-  padding-top: 36px;
+  margin-bottom: 22px;
+  margin-top: 36px;
 }
 .logo__show--less::before {
   content: url(img/readmore.svg);
   transform: rotate(180deg) translateX(17px);
-  transition: all 1s ease;
-  padding-right: 17px;
+  /*transition: all 1s ease;*/
+  margin-left: 24px;
   cursor: pointer;
 }
 /*-------------------------------------------------------------------------------*/
@@ -171,7 +175,7 @@ body, html, div, button {
     margin-bottom: 16px;
   }
   .logo__show {
-    padding-left: 42px;
+    margin-left: 42px;
   }
   .swiper__text-description {
     padding-left: 32px;
