@@ -84,6 +84,7 @@ body, html, div, button {
 .swiper__description-container {
   background: linear-gradient(270deg, #F8f8F8 0%, #FFFFFF 98.61%);
   transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-top: 1px solid #D9FFF5;
 }
 .swiper__text-description {
   font-family: TT Lakes;
